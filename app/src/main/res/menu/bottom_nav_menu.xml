@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/deleteBt"
+        android:icon="@drawable/baseline_delete_24"
+        android:iconTint="@color/black"
+        android:title="" />
+    <item
+        android:id="@+id/alarmbtNav"
+        android:icon="@drawable/baseline_alarm_24"
+        android:iconTint="@color/black"
+        android:title=""
+        />
+</menu>

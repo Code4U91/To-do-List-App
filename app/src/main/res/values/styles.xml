@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- styles.xml -->
+    <style name="PopupMenuStyle" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">#17332E</item> <!-- Change background color -->
+        <item name="android:textColor">@color/black</item> <!-- Change text color -->
+    </style>
+
+</resources>

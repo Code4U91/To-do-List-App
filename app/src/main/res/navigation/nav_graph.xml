@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.to_dolist.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchListFragment"
+            app:destination="@id/searchListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.example.to_dolist.ContentFragment"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content" >
+        <argument
+            android:name="taskId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <action
+            android:id="@+id/action_contentFragment_to_setAlarmFragment"
+            app:destination="@id/setAlarmFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="fromSearchFragment"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_contentFragment_to_searchListFragment"
+            app:destination="@id/searchListFragment" />
+        <argument
+            android:name="fromNotificationTaskId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/searchListFragment"
+        android:name="com.example.to_dolist.SearchListFragment"
+        android:label="fragment_search_list"
+        tools:layout="@layout/fragment_search_list" >
+        <action
+            android:id="@+id/action_searchListFragment_to_contentFragment"
+            app:destination="@id/contentFragment" >
+        <argument
+            android:name="fromSearchFragment"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        </action>
+        <action
+            android:id="@+id/action_searchListFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/setAlarmFragment"
+        android:name="com.example.to_dolist.SetAlarmFragment"
+        android:label="fragment_set_alarm"
+        tools:layout="@layout/fragment_set_alarm" >
+        <argument
+            android:name="taskId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <action
+            android:id="@+id/action_setAlarmFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+    </fragment>
+
+    <!-- Global action to navigate to ContentFragment -->
+    <action
+        android:id="@+id/actionGlobalContentFragment"
+        app:destination="@id/contentFragment">
+        <argument
+            android:name="fromNotificationTaskId"
+            app:argType="long" />
+    </action>
+
+</navigation>
