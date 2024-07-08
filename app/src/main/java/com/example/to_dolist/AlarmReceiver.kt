@@ -67,7 +67,7 @@ class AlarmReceiver : BroadcastReceiver(){
 
 
 
-        val notificationId = taskId?.toInt()
+        val notificationId = taskId?.toInt() // Request Id
 
         // for handling click on the notification
         val intent = Intent(context, MainActivity::class.java).apply {
