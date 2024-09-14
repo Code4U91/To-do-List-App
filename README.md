@@ -1,6 +1,8 @@
 # To-do-List-App
  A beginner android developer's first project app
 
+Technologies and tools used : Kotlin, Room Database, Navigation, XML, viewmodel, recycler view, Notification, Fragments
+
 Current App features :-
 
 1. Uses Single Activity multiple fragment concept
