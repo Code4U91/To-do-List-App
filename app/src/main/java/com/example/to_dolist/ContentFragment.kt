@@ -109,13 +109,17 @@ class ContentFragment : Fragment() {
             else {  // User clicked on the add button to add new Task
 
                 disableButton()
+                if (binding.dateAndTimeTv.text == "")
+                {
+                    binding.dateAndTimeTv.text = getCurrentDateTime()
+                }
 
                 binding.okBt.setOnClickListener {
 
                     addTask()
 
                     it.findNavController().navigate(R.id.action_contentFragment_to_homeFragment)
-                  //  SharedTaskViewModel.isListItemClickedLiveData.value = true
+
                 }
 
                 lifecycleScope.launch {
