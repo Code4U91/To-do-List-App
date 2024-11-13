@@ -1,32 +1,33 @@
 # To-do-List-App
  A beginner android developer's first project app
 
-App Sample Images :
+# App Sample Images :
 
-Front page
+# Front page
  
 ![frontScreen](https://github.com/user-attachments/assets/92bd10a9-8ce4-4c13-a2aa-399e363292e9)
 
 
-Creating/adding new note
+# Creating/adding new note
 
 ![create new note](https://github.com/user-attachments/assets/c0b84721-e44b-493d-8092-238501dc4f23)
 
 
-Setting alarm
+# Setting alarm
 
 ![setAlarm](https://github.com/user-attachments/assets/8fd6c608-1f05-4839-b33a-c5cd1a10e9cc)
 
 
-Search for saved notes in database
+# Search for saved notes in database
 
 
 ![search for note in db](https://github.com/user-attachments/assets/2c03dcc4-7dec-486b-9429-c0b88b316ef4)
 
 
-Technologies and tools used : Kotlin, Room Database, Navigation, XML, viewmodel, recycler view, Notification, Fragments
+# Technologies and tools used :
+ Kotlin, Room Database, Navigation, XML, viewmodel, recycler view, Notification, Fragments
 
-Current App features :-
+# Current App features :-
 
 1. Uses Single Activity multiple fragment concept
 2. Uses Roomdatabase to store the data saved by the user
