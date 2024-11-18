@@ -1,5 +1,10 @@
 # To-do-List-App
- A beginner android developer's first project app
+ A beginner android developer's first project app.
+This app allows user to create, update, delete, save the notes.
+It also provides feature like setting up alarm, searching for a note.
+
+# Technologies and tools used :
+ Kotlin, Room Database, Navigation, XML for UI, viewmodel, recycler view, Notification, Fragments
 
 # App Sample Images :
 
@@ -23,9 +28,6 @@
 
 ![search for note in db](https://github.com/user-attachments/assets/2c03dcc4-7dec-486b-9429-c0b88b316ef4)
 
-
-# Technologies and tools used :
- Kotlin, Room Database, Navigation, XML, viewmodel, recycler view, Notification, Fragments
 
 # Current App features :-
 
